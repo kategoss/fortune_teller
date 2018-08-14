@@ -9,10 +9,34 @@
     <title>Tranportation Survey</title>
   </head>
   <body>
-    <form id="formInput">
-    <h2>Which method of transportation have you used to get to work</h2>
-    <label for="userInput">
-    <input
-  </form>
+    <div class="container">
+      <form id="formInput">
+        <!-- Experience -->
+        <p>Have you experienced any unusual behaviors?</p>
+        <div class="form-group">
+          <input type="checkbox" name="experience" value="1">Loss of sleep.<br>
+          <input type="checkbox" name="experience" value="1">Loss of appetite.<br>
+          <input type="checkbox" name="experience" value="1">Feeling overwhelmed.<br>
+        </div>
+        <!-- Health -->
+        <p>Have you ever had any of these health symptoms?</p>
+        <div class="form-group">
+          <input type="checkbox" name="health" value="1">High blood pressure.<br>
+          <input type="checkbox" name="health" value="1">Unable to sleep.<br>
+          <input type="checkbox" name="health" value="1">Reoccuring pain in joints<br>
+        </div>
+        <!-- methods -->
+        <div class="form-group">
+          <p>Have you tried any of these coping methods?</p>
+          <input type="checkbox" name="methods" value="-1">Meditated<br>
+          <input type="checkbox" name="methods" value="-1">Cuddled with someone you love for 3 hours<br>
+          <input type="checkbox" name="methods" value="-1">Taken slow long deep breaths. (in through the nose out through mouth)<br>
+        </div>
+        <button type="submit" name="btn">Submit</button>
+      </form>
+      <span id="advice">
+      <p>Consider these resources to help cope with stress:</p>
+      </span>
+    </div>
   </body>
 </html>
